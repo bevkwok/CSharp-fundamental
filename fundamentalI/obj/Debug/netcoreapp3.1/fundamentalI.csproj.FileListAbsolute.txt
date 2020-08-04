@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamentalI/bin/Debug/netcoreapp3.1/fundamentalI.deps.json
+/Users/beverly/Desktop/csharp/fundamentalI/bin/Debug/netcoreapp3.1/fundamentalI.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamentalI/bin/Debug/netcoreapp3.1/fundamentalI.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamentalI/bin/Debug/netcoreapp3.1/fundamentalI.dll
+/Users/beverly/Desktop/csharp/fundamentalI/bin/Debug/netcoreapp3.1/fundamentalI.pdb
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.dll
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.pdb
+/Users/beverly/Desktop/csharp/fundamentalI/obj/Debug/netcoreapp3.1/fundamentalI.genruntimeconfig.cache
