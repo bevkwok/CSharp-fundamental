@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/bin/Debug/netcoreapp3.1/collections_practice.deps.json
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/bin/Debug/netcoreapp3.1/collections_practice.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/bin/Debug/netcoreapp3.1/collections_practice.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/bin/Debug/netcoreapp3.1/collections_practice.dll
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/bin/Debug/netcoreapp3.1/collections_practice.pdb
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.dll
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.pdb
+/Users/beverly/Desktop/csharp/fundamental/collections_practice/obj/Debug/netcoreapp3.1/collections_practice.genruntimeconfig.cache
