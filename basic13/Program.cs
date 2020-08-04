@@ -141,11 +141,8 @@ namespace basic13
         public static object[] NumToString(int[] numbers)
         {
             string dojo = "dojo";
-            for(int i = 0; i<numbers.Length; i++){
-                if(numbers[i] < 0){
-                    numbers[i] = dojo;
-                }
-            }
+
         }
+        return numbers[i];
     }
 }
