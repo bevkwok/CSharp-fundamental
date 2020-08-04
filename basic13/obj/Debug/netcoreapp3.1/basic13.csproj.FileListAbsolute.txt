@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/basic13/bin/Debug/netcoreapp3.1/basic13.deps.json
+/Users/beverly/Desktop/csharp/fundamental/basic13/bin/Debug/netcoreapp3.1/basic13.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamental/basic13/bin/Debug/netcoreapp3.1/basic13.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamental/basic13/bin/Debug/netcoreapp3.1/basic13.dll
+/Users/beverly/Desktop/csharp/fundamental/basic13/bin/Debug/netcoreapp3.1/basic13.pdb
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.dll
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.pdb
+/Users/beverly/Desktop/csharp/fundamental/basic13/obj/Debug/netcoreapp3.1/basic13.genruntimeconfig.cache
