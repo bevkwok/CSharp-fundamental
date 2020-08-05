@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/beverly/Desktop/csharp/fundamental/oop/human/human.csproj",
-      "projectName": "human",
-      "projectPath": "/Users/beverly/Desktop/csharp/fundamental/oop/human/human.csproj",
+      "projectUniqueName": "/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/hungrey_ninja.csproj",
+      "projectName": "hungrey_ninja",
+      "projectPath": "/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/hungrey_ninja.csproj",
       "packagesPath": "/Users/beverly/.nuget/packages/",
-      "outputPath": "/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/",
+      "outputPath": "/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/beverly/.nuget/NuGet/NuGet.Config"

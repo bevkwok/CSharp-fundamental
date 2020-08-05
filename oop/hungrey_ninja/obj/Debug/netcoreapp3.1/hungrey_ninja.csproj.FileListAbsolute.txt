@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/bin/Debug/netcoreapp3.1/hungrey_ninja.deps.json
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/bin/Debug/netcoreapp3.1/hungrey_ninja.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/bin/Debug/netcoreapp3.1/hungrey_ninja.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/bin/Debug/netcoreapp3.1/hungrey_ninja.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/bin/Debug/netcoreapp3.1/hungrey_ninja.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/hungrey_ninja/obj/Debug/netcoreapp3.1/hungrey_ninja.genruntimeconfig.cache

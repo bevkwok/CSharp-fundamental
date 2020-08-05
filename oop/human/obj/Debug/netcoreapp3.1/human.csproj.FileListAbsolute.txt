@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamental/oop/human/bin/Debug/netcoreapp3.1/human.deps.json
+/Users/beverly/Desktop/csharp/fundamental/oop/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamental/oop/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamental/oop/human/bin/Debug/netcoreapp3.1/human.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/human/bin/Debug/netcoreapp3.1/human.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/human/obj/Debug/netcoreapp3.1/human.genruntimeconfig.cache
