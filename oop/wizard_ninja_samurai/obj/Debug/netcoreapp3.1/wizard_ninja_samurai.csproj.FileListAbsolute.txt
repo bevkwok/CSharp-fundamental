@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/bin/Debug/netcoreapp3.1/wizard_ninja_samurai.deps.json
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/bin/Debug/netcoreapp3.1/wizard_ninja_samurai.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/bin/Debug/netcoreapp3.1/wizard_ninja_samurai.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/bin/Debug/netcoreapp3.1/wizard_ninja_samurai.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/bin/Debug/netcoreapp3.1/wizard_ninja_samurai.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/wizard_ninja_samurai/obj/Debug/netcoreapp3.1/wizard_ninja_samurai.genruntimeconfig.cache
