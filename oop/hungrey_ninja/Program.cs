@@ -7,7 +7,6 @@ namespace hungrey_ninja
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             Ninja ninja_a = new Ninja();
 

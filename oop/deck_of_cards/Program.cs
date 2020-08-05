@@ -6,7 +6,15 @@ namespace deck_of_cards
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Player player1= new Player("Amy");
+
+            Deck deck1 = new Deck();
+
+            Card card = player1.draw(deck1);
+
+            deck1.shuffle();
+
+
         }
     }
 }

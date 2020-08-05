@@ -25,11 +25,7 @@ namespace hungrey_ninja
         public Food Serve()
         {
             Random rand = new Random();
-            for(int i = 0; i < Menu.Count; i++)
-            {
-                System.Console.WriteLine(Menu[rand.Next(0,Menu.Count)]);
-            }
-            return Menu[rand.Next(0,Menu.Count)];
+            return Menu[rand.Next(Menu.Count)];
         }
     }
 }

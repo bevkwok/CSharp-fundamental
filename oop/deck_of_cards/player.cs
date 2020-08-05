@@ -7,18 +7,24 @@ namespace deck_of_cards
     {
         public string Name;
 
-        public List<Card> hand{get;set;}
+        public List<Card> hand;
 
-        public object draw()
+        public Player(string name)
         {
-            hand.Add(Deck.deal());
-            return Deck.deal();
+            Name = name;
+            hand = new List<Card>();
+        }
+        public Card draw(Deck deck)
+        {
+            hand.Add(deck.deal());
+            return deck.deal();
         }
 
-        public object discard(int index)
+        public Card discard(int index)
         {
+            Card removedCard = hand[index];
             hand.Remove(hand[index]);
-            return hand;
+            return removedCard;
         }
     }
 }

@@ -1,0 +1,12 @@
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/bin/Debug/netcoreapp3.1/deck_of_cards.deps.json
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/bin/Debug/netcoreapp3.1/deck_of_cards.runtimeconfig.json
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/bin/Debug/netcoreapp3.1/deck_of_cards.runtimeconfig.dev.json
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/bin/Debug/netcoreapp3.1/deck_of_cards.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/bin/Debug/netcoreapp3.1/deck_of_cards.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.csprojAssemblyReference.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.AssemblyInfoInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.AssemblyInfo.cs
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.csproj.CoreCompileInputs.cache
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.dll
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.pdb
+/Users/beverly/Desktop/csharp/fundamental/oop/deck_of_cards/obj/Debug/netcoreapp3.1/deck_of_cards.genruntimeconfig.cache
