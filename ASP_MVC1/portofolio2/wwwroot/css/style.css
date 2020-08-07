@@ -1,0 +1,61 @@
+#intro{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#intro_pic{
+    width: 250px;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+}
+
+label{
+    margin: 5px;
+}
+#contact_input{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact_input div{
+    margin: 20px;
+    /* border: brown solid 1px; */
+}
+
+#message_input label{
+    display: block;
+}
+#message_input input{
+    height: 60px;
+    width: 300px;
+}
+
+#project_box{
+    text-align: center;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+#project_box img{
+    width: 100px;
+}
+
+#project_box div{
+    padding: 10px;
+}
+
+.project_info{
+    width: 500px;
+}
+
+*{
+    /* border: 1px solid brown; */
+}
