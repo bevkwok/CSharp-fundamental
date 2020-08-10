@@ -21,7 +21,7 @@ namespace form_submission.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
         [HttpPost("submit")]
@@ -33,7 +33,7 @@ namespace form_submission.Controllers
             }
             else
             {
-                return View();
+                return Index();
             }
         }
 
