@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace survey2.Models
+namespace survey3.Models
 
 {
     public class Ninja
