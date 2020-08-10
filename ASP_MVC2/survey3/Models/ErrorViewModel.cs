@@ -1,6 +1,6 @@
 using System;
 
-namespace survey2.Models
+namespace survey3.Models
 {
     public class ErrorViewModel
     {

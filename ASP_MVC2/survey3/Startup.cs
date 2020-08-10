@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace survey2
+namespace survey3
 {
     public class Startup
     {
@@ -22,6 +22,7 @@ namespace survey2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
             services.AddMvc(options => options.EnableEndpointRouting = false); 
         }
 
@@ -37,6 +38,7 @@ namespace survey2
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+            app.UseSession(); 
             app.UseMvc(); 
 
             app.UseRouting();

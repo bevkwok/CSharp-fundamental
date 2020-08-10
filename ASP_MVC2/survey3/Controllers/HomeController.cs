@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using survey2.Models;
+using survey3.Models;
 
-namespace survey2.Controllers
+namespace survey3.Controllers
 {
     public class HomeController : Controller
     {
@@ -21,7 +21,7 @@ namespace survey2.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
         [HttpPost("result")]
@@ -32,7 +32,7 @@ namespace survey2.Controllers
             }
             else
             {
-                return View();
+                return Index();
             }
             // return View("result", ninja);
         }
