@@ -20531,8 +20531,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/beverly/Desktop/csharp/fundamental/ASP_MVC2/form_submission/Views/Home/submit.cshtml",
-      "TargetPath": "Views\\Home\\submit.cshtml",
+      "FilePath": "/Users/beverly/Desktop/csharp/fundamental/ASP_MVC2/form_submission/Views/Home/Submit.cshtml",
+      "TargetPath": "Views\\Home\\Submit.cshtml",
       "FileKind": "mvc"
     },
     {
