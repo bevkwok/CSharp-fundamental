@@ -1,0 +1,48 @@
+﻿@model Ninja
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <h1>Dojo Survey</h1>
+        <form asp-action="Result" asp-controller="Home" method="POST">
+        <div>
+            <span asp-validation-for="Name"></span>
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+        </div>
+        <div>
+            <span asp-validation-for="Location"></span>
+            <label asp-for="Location"></label>
+            <select asp-for="Location" id="Location">
+                <option value="San Jose">San Jose</option>
+                <option value="Arlington">Arlington</option>
+                <option value="Bellevue">Bellevue</option>
+                <option value="Chicago">Chicago</option>
+            </select>
+        </div>
+        <div>
+            <span asp-validation-for="Language"></span>
+            <label asp-for="Language"></label>
+            <select asp-for="Language" id="Language">
+                <option value="csharp">C#</option>
+                <option value="js">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="mern">Mern</option>
+            </select>
+        </div>
+        <div>
+            <span asp-validation-for="Comment"></span>
+            <label asp-for="Comment">Comment(optional):</label>
+            <input asp-for="Comment" id="Comment">
+        </div>
+        <div>
+            <input value="Submit "type="submit">
+        </div>
+        </form>
+</body>
+</html>
