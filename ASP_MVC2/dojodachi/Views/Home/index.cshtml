@@ -1,0 +1,51 @@
+@model dojodachi.Models.Dojodachi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Fullness: @ViewBag.Fullness</p>
+        <p>Happiness: @ViewBag.Happiness</p>
+        <p>Meals: @ViewBag.Meals</p>
+        <p>Energy: @ViewBag.Energy</p>
+    </div>
+    <div>
+        <img src="https://a.thumbs.redditmedia.com/vgsdeI9NEO30dWRjRJ8uI91pq3iqG-WhoND9XrBvY_4.png" alt="">
+    </div>
+    <div>
+        <p>@ViewBag.Message</p>
+    </div>
+    <div>
+    @{
+        if(@Fullness >= 100 && @Happiness >= 100 && @Energy >= 100)
+        {
+        <div>
+            <form asp-action="Clear" asp-controller="Home" method="POST">
+                <input type="submit" value="Restart">
+            </form>
+        </div>
+        }
+
+    }
+        <div>
+            <form asp-action="Feed" asp-controller="Home" method="POST">
+                <input type="submit" value="Feed">
+            </form>
+            <form asp-action="Play" asp-controller="Home" method="POST">
+                <input type="submit" value="Play">
+            </form>
+            <form asp-action="Work" asp-controller="Home" method="POST">
+                <input type="submit" value="Work">
+            </form>
+            <form asp-action="Sleep" asp-controller="Home" method="POST">
+                <input type="submit" value="Sleep">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
