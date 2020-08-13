@@ -47,7 +47,7 @@ namespace SportsORM.Controllers
 
             ViewBag.City = _context.Teams.Where(lc => lc.Location.Contains("City")).ToList();
 
-            ViewBag.Tname = _context.Teams.Where(tnt => tnt.TeamName.Contains("T")).ToList();
+            ViewBag.Tname = _context.Teams.Where(tnt => tnt.TeamName.StartsWith("T")).ToList();
 
             ViewBag.LocationOrder = _context.Teams.OrderBy(lo => lo.Location).ToList();
 

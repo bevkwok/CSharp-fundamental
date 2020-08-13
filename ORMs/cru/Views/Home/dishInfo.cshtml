@@ -1,0 +1,34 @@
+@using cru.Models
+@model Dishes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><a href="/">Home</a></div>
+    <div>
+        <h1>@Model.Name</h1>
+        <h3>@Model.Chef</h3>
+    </div>
+    <hr>
+    <div>
+        <p>@Model.Description</p>
+        <p>Calories: @Model.Calories</p>
+        <p>Tasiness: @Model.Tastiness</p>
+    </div>
+    <div>
+        <form asp-action="DelDish" asp-controller="Home" method="POST">
+            <input type="hidden" value="@Model.DishId">
+            <input type="submit" value="Delete">
+        </form>
+
+        <form asp-action="EditPage" asp-controller="Home" method="POST">
+            <input type="hidden" value="@Model.DishId">
+            <input type="submit" value="Edit">
+        </form>
+    </div>
+</body>
+</html>

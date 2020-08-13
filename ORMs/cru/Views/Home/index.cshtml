@@ -1,0 +1,30 @@
+@using cru.Models
+@model Dishes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDDelicious</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to CRUDelicious</h1>
+    </div>
+    <div>
+        <div>
+            <h3>Check out some recent dishes!</h3>
+        </div>
+        <div>
+            <a href="/new">Add a Dish</a>
+        </div>
+    </div>
+    <div>
+        @foreach(Dishes dish in ViewBag.AllDishes)
+        {
+            <p>@dish.DishId <a href="/@dish.DishId">@dish.Name</a> by @dish.Chef</p>
+        }
+    </div>
+</body>
+</html>
