@@ -1,0 +1,49 @@
+@using Chefs_n_dishes.Models
+@model Wrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishes</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1><a href="/">Chefs</a>|<a href="/dishes">Dishes</a></h1>
+        </div>
+        <div>
+            <h3>
+                <a href="/dishes/new">Add a Dish</a>
+            </h3>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Yum, take a look at our tasty dishes!</h2>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Chef</th>
+                    <th>Tastiness</th>
+                    <th>Calories</th>
+                </tr>
+                @foreach (var d in Model.DishTableModel)
+                {
+                <tr>
+                    <td>@d.Name</td>
+                    <td>@d.CookedBy.FirstName @d.CookedBy.LastName </td>
+                    <td>@d.Tastiness</td>
+                    <td>@d.Calories</td>
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+</body>
+</html>
