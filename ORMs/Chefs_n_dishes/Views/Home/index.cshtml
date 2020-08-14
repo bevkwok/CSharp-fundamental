@@ -1,0 +1,49 @@
+@using Chefs_n_dishes.Models
+@model Wrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefs and Dishes - Chefs</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1><a href="/">Chefs</a>|<a href="/dishes">Dishes</a></h1>
+        </div>
+        <div>
+            <h3>
+                <a href="/new">Add a Chef</a>
+            </h3>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Check out our roster of Chefs!</h2>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th># of Dishes</th>
+                </tr>
+                @foreach (var chef in Model.ChefTableModel)
+                {
+                    var today = DateTime.Today;
+                    var age = today.Year - chef.Birthday.Year;
+                <tr>
+                    <td>@chef.FirstName @chef.LastName</td>
+                    <td>@age</td>
+                    <td>@chef.CreatedDish.Count</td>
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+</body>
+</html>

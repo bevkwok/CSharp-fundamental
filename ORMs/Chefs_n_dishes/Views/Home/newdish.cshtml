@@ -1,0 +1,56 @@
+@using Chefs_n_dishes.Models
+@model Wrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Dish</title>
+</head>
+<body>
+    <div>
+        <h1>Add a Dish!</h1>
+    </div>
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        <form asp-action="AddDish" asp-controller="Home" method="POST">
+                    <div>
+            <span asp-validation-for="DishFromModel.Name"></span>
+            <label asp-for="DishFromModel.Name"></label>
+            <input asp-for="DishFromModel.Name">
+            <span asp-validation-for="DishFromModel.Calories"></span>
+            <label asp-for="DishFromModel.Calories"></label>
+            <input asp-for="DishFromModel.Calories">
+            <span asp-validation-for="DishFromModel.Description"></span>
+            <label asp-for="DishFromModel.Description"></label>
+            <input asp-for="DishFromModel.Description">
+        </div>
+        <div>
+            <span asp-validation-for="DishFromModel.Tastiness"></span>
+            <label asp-for="DishFromModel.Tastiness"></label>
+            <select asp-for="DishFromModel.Tastiness" name="DishFromModel.Tastiness" id="">
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+            </select>
+        </div>
+        <div>
+            <label asp-for="DishFromModel.ChefId">Chef</label>
+            <select asp-for="DishFromModel.ChefId" id="">
+                @foreach (var chef in Model.ChefTableModel)
+                {
+                <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <input value="Add Dish" type="submit">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

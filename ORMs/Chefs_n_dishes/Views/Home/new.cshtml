@@ -1,0 +1,38 @@
+@using Chefs_n_dishes.Models
+@model Chef
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Chef</title>
+</head>
+<body>
+    <div>
+        <h1>Add a Chef!</h1>
+    </div>
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        <form asp-action="AddChef" asp-controller="Home" method="POST">
+        <div>
+            <span asp-validation-for="FirstName"></span>
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName">
+            <span asp-validation-for="LastName"></span>
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName">
+        </div>
+        <div>
+            <span asp-validation-for="Birthday"></span>
+            <label asp-for="Birthday"></label>
+            <input asp-for="Birthday">
+        </div>
+        <div>
+            <input value="Add Chef" type="submit">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
