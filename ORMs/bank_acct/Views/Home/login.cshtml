@@ -1,0 +1,36 @@
+@using bank_acct.Models
+@model User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+    </div>
+    <form asp-action="Login" asp-controller="Home" method="POST">
+    <div>
+        <div>
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email"></label>
+            <input asp-for="Email">
+        </div>
+        <div>
+            <span asp-validation-for="Password"></span>
+            <label asp-for="Password"></label>
+            <input asp-for="Password">
+        </div>
+        <div>
+            <input type="submit" value="Login">
+        </div>
+    </div>
+    <div>
+        <a href="/">Need to Register?</a>
+    </div>
+
+    </form>
+</body>
+</html>

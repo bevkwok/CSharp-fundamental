@@ -1,0 +1,56 @@
+@using bank_acct.Models
+@model IndexWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Welcome, @Model.UserFormModel.FirstName </h1>
+        </div>
+        <div>
+                <p>
+                    Current balance: 
+                    @Html.Raw(@String.Format("{0:c}", @Model.UserFormModel.UserTransaction.Sum(s => s.Amount)))
+                </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p>
+                Deposit/Withdraw: 
+                <span>
+                    <form asp-action="Deposit" asp-controller="Home" method="POST">
+                        <input asp-for="TransactionFormModel.Amount">
+                        <input asp-for="TransactionFormModel.UserId" type="hidden" value="@Model.UserFormModel.UserId">
+                        <input type="submit" value="submit">
+                        <span asp-validation-for="TransactionFormModel.Amount"></span>
+                    </form>
+                </span>
+            </p>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+            @foreach (var t in @Model.UserFormModel.UserTransaction)
+            {
+            <tr>
+                <td>@Html.Raw(@String.Format("{0:c}", @t.Amount))</td>
+                <td>@t.CreatedAt.ToString("MMM dd yyyy")</td>
+            </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

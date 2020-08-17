@@ -1,0 +1,67 @@
+@using bank_acct.Models
+@model IndexWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Register</h1>
+        </div>
+        <form asp-action="Register" asp-controller="Home" method="POST">
+        <div>
+            <span asp-validation-for="UserFormModel.FirstName"></span><br>
+            <label asp-for="UserFormModel.FirstName"></label>
+            <input asp-for="UserFormModel.FirstName">
+        </div>
+        <div>
+            <span asp-validation-for="UserFormModel.LastName"></span><br>
+            <label asp-for="UserFormModel.LastName"></label>
+            <input asp-for="UserFormModel.LastName">
+        </div>
+        <div>
+            <span asp-validation-for="UserFormModel.Email"></span><br>
+            <label asp-for="UserFormModel.Email"></label>
+            <input asp-for="UserFormModel.Email">
+        </div>
+        <div>
+            <span asp-validation-for="UserFormModel.Password"></span><br>
+            <label asp-for="UserFormModel.Password"></label>
+            <input asp-for="UserFormModel.Password">
+        </div>
+        <div>
+            <span asp-validation-for="UserFormModel.Confirm_Password"></span><br>
+            <label asp-for="UserFormModel.Confirm_Password"></label>
+            <input asp-for="UserFormModel.Confirm_Password">
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+        </form>
+    </div>
+    <div>
+        <a href="/login">Already Registered?</a>
+    </div>
+        <div>
+        <table>
+            <tr>
+                <th> Frist Name</th>
+                <th> Last Name</th>
+                <th> Email</th>
+            </tr>
+            @foreach (var u in @Model.UserTableModel)
+            {
+            <tr>
+                <td>@u.FirstName</td>
+                <td>@u.LastName</td>
+                <td>@u.Email</td>
+            </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
