@@ -1,0 +1,52 @@
+@using Products_n_Categories.Models
+@model indexWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product and Categories</title>
+</head>
+<body>
+    <div>
+        <h1>
+            <a href="/products">Products</a> | <a href="/categories">Categories</a>
+        </h1>
+    </div>
+    <div>
+        <div>
+            <div>
+                <h2>New Product</h2>
+            </div>
+            <div>
+            <form asp-action="NewProduct" asp-controller="Home" method="POST">
+                <span asp-validation-for="oneProduct.Name"></span>
+                <br>
+                <label asp-for="oneProduct.Name"></label>
+                <input asp-for="oneProduct.Name">
+                <span asp-validation-for="oneProduct.Price"></span>
+                <br>
+                <label asp-for="oneProduct.Price"></label>
+                <input asp-for="oneProduct.Price">
+                <span asp-validation-for="oneProduct.Descriptions"></span>
+                <br>
+                <label asp-for="oneProduct.Descriptions"></label>
+                <input asp-for="oneProduct.Descriptions">
+                <input type="submit" value="Add Product">
+            </form>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Exising Products</h2>
+            </div>
+            <div>
+                @foreach (var p in @Model.ProductsList)
+                {
+                    <p><a href="/products/@p.ProductId">@p.Name</a></p>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

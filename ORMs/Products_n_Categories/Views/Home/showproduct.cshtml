@@ -1,0 +1,44 @@
+@using Products_n_Categories.Models
+@model indexWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <div>
+        <h1>@Model.oneProduct.Name</h1>
+    </div>
+    <div>
+        <div>
+            <h3>Categories</h3>
+            <ul>
+            @foreach (var c in @Model.oneProduct.belongedCategory)
+            {
+                <li>@c.Category.CategoryName</li>
+            }
+            </ul>
+        </div>
+        <div>
+            <div>
+                <h3>Add Categories</h3>
+            </div>
+            <div>
+            <form asp-action="AddCategories" asp-controller="Home" asp-route-id="@Model.oneProduct.ProductId" method="POST">
+                <span asp-validation-for="oneAssociation.CategoryId"></span>
+                <label asp-for="oneAssociation.CategoryId">Category: </label>
+                <select asp-for="oneAssociation.CategoryId">
+                @foreach (Category cc in @Model.CategoryList)
+                {
+                    <option value="@cc.CategoryId">@cc.CategoryName</option>
+                }
+                </select>
+                <input type="submit" value="Add Category">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
