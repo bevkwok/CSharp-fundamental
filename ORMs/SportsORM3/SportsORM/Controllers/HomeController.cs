@@ -122,22 +122,41 @@ namespace SportsORM.Controllers
         [HttpGet("level_3")]
         public IActionResult Level3()
         {
-            var SE = _context.Players
-            .FirstOrDefault(p => p.FirstName == "Samuel" && p.LastName == "Evans");
-            int SEid = SE.PlayerId;
-            
             ViewBag.SEteam = _context.Teams
-            .Include(p => p.AllPlayers)
-            .ThenInclude(pp => pp.PlayerOnTeam)
-            .FirstOrDefault(p => p.AllPlayers.PlayerId == 
-            
-            // .FirstOrDefault(p => p.PlayerId == SEid));
+            .Include(set => set.AllPlayers)
+            .ThenInclude(set2 => set2.PlayerOnTeam)
+            .Where(set3 => set3.AllPlayers.Any(setp => setp.PlayerOnTeam.FirstName == "Samuel" && setp.PlayerOnTeam.LastName == "Evans"))
+            .ToList();
 
-
-            ViewBag.SEteam = _context.Players
+            ViewBag.mtcplayer = _context.Players
             .Include(p => p.AllTeams)
-            .ThenInclude(pt => pt.TeamOfPlayer)
-            .FirstOrDefault(p => p.FirstName == "Samuel" && p.LastName == "Evans");
+            .ThenInclude(pt => pt.PlayerOnTeam)
+            .Where(pti => pti.AllTeams.Any(ptin => ptin.TeamOfPlayer.Location == "Manitoba" &&  ptin.TeamOfPlayer.TeamName == "Tiger-Cats"));
+
+            ViewBag.wvfp = _context.Players
+            .Include(p2 => p2.AllTeams)
+            .ThenInclude(pt2=> pt2.TeamOfPlayer)
+            .Where(tp => tp.AllTeams.Any(tpa => tpa.TeamOfPlayer.TeamName == "Vikings"))
+            .Where(tp2 => !tp2.CurrentTeam.TeamName.Contains("Vikings"));
+
+            ViewBag.jgt = _context.Teams
+            .Include(t2 => t2.AllPlayers)
+            .ThenInclude(t2t => t2t.PlayerOnTeam)
+            .Where(t2t => t2t.AllPlayers.Any(jg => jg.PlayerOnTeam.FirstName == "Jacob" && jg.PlayerOnTeam.LastName == "Gray"));
+
+            // ViewBag.jt = _context.Leagues
+            // .Include(t3 => t3.Teams)
+            // .ThenInclude(t3t => t3t.AllPlayers)
+            // .ThenInclude(pot => pot.PlayerOnTeam)
+            // .Where(t3w => t3w.Name == "Atlantic Federation of Amateur Baseball")
+            // .Where(pot => pot.Teams.Any(tp => tp.AllPlayers.Any(pp => pp.PlayerOnTeam.FirstName == "Joshua")));
+
+            ViewBag.jt = _context.Players
+            .Include(at => at.AllTeams)
+            .ThenInclude(top => top.TeamOfPlayer)
+            .ThenInclude(cl => cl.CurrLeague)
+            .Where(pfn => pfn.FirstName == "Joshua")
+
             return View();
         }
 
