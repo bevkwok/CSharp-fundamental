@@ -1,0 +1,44 @@
+@using Products_n_Categories.Models
+@model indexWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+</head>
+<body>
+    <div>
+        <h1>
+            <a href="/products">Products</a> | <a href="/categories">Categories</a>
+        </h1>
+    </div>
+    <div>
+        <div>
+            <div>
+                <h2>New Category</h2>
+            </div>
+            <div>
+            <form asp-action="NewCategory" asp-controller="Home" method="POST">
+                <span asp-validation-for="oneCategory.CategoryName"></span>
+                <br>
+                <label asp-for="oneCategory.CategoryName"></label>
+                <input asp-for="oneCategory.CategoryName">
+                <input type="submit" value="Add Category">
+            </form>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Exising Category</h2>
+            </div>
+            <div>
+                @foreach (var c in @Model.CategoryList)
+                {
+                    <p><a href="">@c.CategoryName</a></p>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
