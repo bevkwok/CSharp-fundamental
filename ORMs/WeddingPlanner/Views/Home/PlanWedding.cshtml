@@ -1,0 +1,46 @@
+@using WeddingPlanner.Models
+@model PlanWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Wedding</title>
+</head>
+<body>
+    <div class="Header">
+        <div>
+            <h1>Plan Your Wedding</h1>
+        </div>
+        <div>
+            <a asp-action="Dashboard" asp-controller="Home" asp-route-UserId="@Model.WedUser.UserId">Dashboard</a>
+            <a href="/Logout">Log Out</a>
+        </div>
+    </div>
+    <div>
+        <form asp-action="AddWedding" asp-controller="Home" method="POST">
+                <div>
+                    <span asp-validation-for="OneWedding.WedderOne"></span>
+                    <label asp-for="OneWedding.WedderOne"></label>
+                    <input asp-for="OneWedding.WedderOne">
+                </div>
+                <div>
+                    <span asp-validation-for="OneWedding.WedderTwo"></span>
+                    <label asp-for="OneWedding.WedderTwo"></label>
+                    <input asp-for="OneWedding.WedderTwo">
+                </div>
+                <div>
+                    <span asp-validation-for="OneWedding.Date"></span>
+                    <label asp-for="OneWedding.Date"></label>
+                    <input asp-for="OneWedding.Date">
+                </div>
+                <div>
+                    <span asp-validation-for="OneWedding.Address"></span>
+                    <label asp-for="OneWedding.Address"></label>
+                    <input asp-for="OneWedding.Address">
+                </div>
+                <input type="submit" value="Create Wedding">
+            </form>
+    </div>
+</body>
+</html>

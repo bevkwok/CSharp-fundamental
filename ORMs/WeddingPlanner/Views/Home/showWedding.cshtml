@@ -1,0 +1,33 @@
+@using WeddingPlanner.Models
+@model Wedding
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Wedding</title>
+</head>
+<body>
+    <div class="Header">
+        <div>
+            <h1>@Model.WedderOne's and @Model.WedderTwo's Wedding</h1>
+        </div>
+        <div>
+            <a asp-action="Dashboard" asp-controller="Home" asp-route-UserId="@Model.Planner.UserId">Dashboard</a>
+            <a href="/Logout">Log Out</a>
+        </div>
+    </div>
+    <div>
+        <h3>Date: @Model.Date.ToString("MMMM dd, yyyy")</h3>
+    </div>
+    <div>
+        <h3>Guests:</h3>
+        <ul>
+            @foreach (var u in @Model.Guests)
+            {
+                <li>@u.User.FirstName @u.User.LastName</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

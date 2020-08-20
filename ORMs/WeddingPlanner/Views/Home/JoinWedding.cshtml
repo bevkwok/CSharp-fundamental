@@ -1,0 +1,18 @@
+@using WeddingPlanner.Models
+@model JoinWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Wedding</title>
+</head>
+<body>
+    <div>
+        <form asp-action="Join" asp-controller="Home" method="POST" asp-route-id="@Model.OneWedding.WeddingId">
+            <span asp-validation-for="OneGuest.UserId"></span>
+            <label asp-for="OneGuest.UserId"></label>
+        </form>
+    </div>
+</body>
+</html>
