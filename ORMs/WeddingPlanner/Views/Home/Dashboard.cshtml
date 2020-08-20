@@ -1,0 +1,49 @@
+@using WeddingPlanner.Models
+@model DashWrapper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <div class="Header">
+        <div>
+            <h1>Welcome to the Wedding Planner, @Model.WedUser.FirstName @Model.WedUser.LastName</h1>
+        </div>
+        <div>
+            <a href="/Logout">Log Out</a>
+        </div>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>Guest</th>
+                <th>Action</th>
+            </tr>
+            @foreach (Wedding wedding in @Model.WeddingList)
+            {
+            <tr>
+                <td><a asp-action="theWedding" asp-controller="Home" asp-route-WedId="@wedding.WeddingId">@wedding.WedderOne & @wedding.WedderTwo</a></td>
+                <td>@wedding.Date.ToString("MM/dd/yyyy")</td>
+                <td>@wedding.Guests.Count()</td>
+                @if(@wedding.Planner.UserId == @Model.WedUser.UserId){
+                    <td><a asp-action="DeleteWedding" asp-controller="Home" asp-route-id="@wedding.WeddingId">Delete</a></td>
+                } else if (@wedding.Guests.Any(g => g.UserId == @Model.WedUser.UserId)){
+                    <td><a asp-action="QuitWedding" asp-controller="Home" asp-route-id="@wedding.WeddingId" asp-route-guest="@Model.WedUser.UserId">Un-RSVP</a></td>
+                } else {
+                    <td><a asp-action="JoinWedding" asp-controller="Home" asp-route-id="@wedding.WeddingId" asp-route-guest="@Model.WedUser.UserId">RSVP</a></td>
+                }
+            </tr>
+            }
+        </table>
+    </div>
+    <div>
+        <a href="/PlanWedding"><button class="btn">New Wedding</button></a>
+    </div>
+</body>
+</html>
