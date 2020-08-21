@@ -1,0 +1,13 @@
+@model Wall.Models.WallWrapper
+<link rel="stylesheet" href="~/css/style.css"/>
+<div class="header">
+    <div>
+        <h2>CodingDojo Wall</h2>
+    </div>
+    <div class="innerheader">
+        <h4>
+            Welcome @Model.WallUser.FirstName
+        </h4>
+        <a href="/Logoff">Log Off</a>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+@model Wall.Models.LogUser;
+
+<form asp-action="Login" asp-controller="Home" method="POST">
+    <span asp-validation-for="LogEmail"></span>
+    <div class="regloglist">
+        <label asp-for="LogEmail"></label>
+        <input asp-for="LogEmail">
+    </div>
+    <span asp-validation-for="LogPassword"></span>
+    <div class="regloglist">
+        <label asp-for="LogPassword"></label>
+        <input asp-for="LogPassword">
+    </div>
+    <input type="submit" value="Login" class="rlbtn">
+</form>

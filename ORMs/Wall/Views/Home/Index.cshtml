@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall - Login and Registration Page</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <h4 id="logintoview">@TempData["OneUser.FirstName"]</h4>
+    <div class="rlcontainer">
+        <div class="reglogform">
+            <div>
+                <h1>Register</h1>
+                
+            </div>
+            <div>
+                <partial name="RegPartial"></partial>
+            </div>
+        </div>
+        <div class="reglogform">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div>
+                <partial name="LogPartial"></partial>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

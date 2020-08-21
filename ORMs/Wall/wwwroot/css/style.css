@@ -1,0 +1,79 @@
+.rlcontainer
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerheader h4{
+    margin-right: 35px;
+}
+*{
+    border: solid 1px red;
+}
+
+.regloglist
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.regloglist label{
+    padding-right: 20px;
+}
+
+#logintoview{
+    text-align: center;
+}
+
+table{
+    text-align: center;
+}
+
+h1{
+    display: inline-block;
+}
+
+
+
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr{
+    text-align: center;
+}
+
+th{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+span{
+    color: red;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rlbtn{
+    margin: 10px 120px;
+}
